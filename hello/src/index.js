@@ -4,11 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import Lista from './Lista';
+import Contador from './Contador';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+//JSX parece html mas é JS
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <div>
+      <Contador valor={10} />
+      <Contador valor={0} />
+      <Contador valor={4} />
+    </div>
+  
 );
 
 // If you want to start measuring performance in your app, pass a function
